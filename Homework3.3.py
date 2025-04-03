@@ -1,12 +1,9 @@
-def split_list(lst):
-    if len(lst) == 0:
-        return [[], []]
+lst = [1, 2, 3, 4, 5]
 
-    mid = (len(lst) + 1) // 2
-    return [lst[:mid], lst[mid:]]
+if len(lst) == 0:
+    result = [[], []]
+else:
+    middle = (len(lst) + 1) // 2
+    result = [lst[:middle], lst[middle:]]
 
-print(split_list([1, 2, 3, 4, 5]))
-print(split_list([1, 2, 3, 4]))
-print(split_list([1, 2, 3]))
-print(split_list([1]))
-print(split_list([]))
+print(result)
