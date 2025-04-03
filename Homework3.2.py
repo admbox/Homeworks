@@ -1,6 +1,7 @@
-def shift_last_to_first(lst):
-    if len(lst) > 1:
-        lst = [lst[-1]] + lst[:-1]
-    return lst
+lst = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-print(shift_last_to_first([1, 2, 3, 4, 5]))
+if len(lst) > 1:
+    last_element = lst.pop()
+    lst.insert(0, last_element)
+
+print(lst)
